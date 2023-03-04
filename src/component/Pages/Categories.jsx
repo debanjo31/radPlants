@@ -29,7 +29,7 @@ function Categories() {
         return(
             //<div className='mb-4'>
               // {/* <img src={props.img} alt={props.name} className="w-full h-96 mb-2" /> */}
-               <Grid item  xs={12} sm={6} md={4} >
+               <Grid item  xs={12} sm={6} md={6} lg={3}  >
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
@@ -39,7 +39,7 @@ function Categories() {
                     alt={props.name}
                     sx={{ height: '100%', }}
                   />
-                  <CardContent sx={{ flexGrow: 2 }}>
+                  <CardContent sx={{ flexGrow: 1}}>
                   <p className='font-mainFont'>{props.name}</p>
                   </CardContent>
                 </Card>

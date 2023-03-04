@@ -26,13 +26,12 @@ function Header() {
   console.log(status)
 
   return (
-    <div className=" shadow-md">
-        <div className="flex justify-between w-5/6 mx-auto">
-            <div className="font-bold text-2xl font-mainFont">Rad Plants</div>
+    <div className=" shadow-md md:shadow-none">
+        <div className="flex justify-between  w-5/6 mx-auto">
+            <div className="font-bold text-2xl font-mainFont mb-4">Rad Plants</div>
             <div className="hidden md:flex gap-8  ">
                 <a href="#">Home</a>
-                <a href="#">Catalogue</a>
-                <a href="#">Contact</a>
+                <a href="#">Catalogue</a>                <a href="#">Contact</a>
             </div>
             <div className="hidden md:flex gap-4 ">
                 <p >Search</p>
