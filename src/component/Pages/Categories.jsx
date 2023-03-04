@@ -49,9 +49,9 @@ function Categories() {
         )
     }
   return (
-    <div className='w-5/6 mx-auto '>
-       <p className='mt-8 text-center font-mainFont text-2xl mb-8'>Categories</p> 
-       <Container sx={{ py: 8 }} maxWidth="md">
+    <div className='w-5/6 mx-auto mt-16 '>
+       <p className='text-center font-mainFont text-2xl mb-8'>Categories</p> 
+       <Container sx={{ py: 4 }} maxWidth="lg">
        <Grid container spacing={4}>
             <Category img={cat1} name="Jungle plants" />
             <Category img={cat2} name="Outdoor plants" />
