@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <div className=" shadow-md md:shadow-none">
-        <div className="flex justify-between  w-5/6 mx-auto">
+        <div className="flex justify-between  w-5/6 mx-auto mt-2">
             <div className="font-bold text-2xl font-mainFont mb-4">Rad Plants</div>
             <div className="hidden md:flex gap-8  ">
                 <a href="#">Home</a>

@@ -10,7 +10,7 @@ function Homepage() {
           <h2 className='text-3xl md:text-5xl text-center md:text-left mt-8 md:m-0 leading-relaxed font-mainFont mb-4'>Find perfect plants for your home</h2>
             <img src={homePic} alt="" className='h-96 w-full md:hidden '/>
             <p>Beautiful plants that encourage you to get creative</p>
-            <button className='bg-black text-white px-8 py-2 font-bold mt-4'>SHOP NOW</button>
+            <button className='bg-black hover:bg-white text-white hover:text-black hover:border-2 hover:border-black px-8 py-2 font-bold mt-8'>SHOP NOW</button>
           </div>
         </div>
          <div className='hidden md:block'>
