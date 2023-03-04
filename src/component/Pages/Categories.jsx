@@ -16,12 +16,12 @@ function Categories() {
   return (
     <div className='w-5/6 text-lg mx-auto'>
        <p className='text-center font-mainFont'>Categories</p> 
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat nemo distinctio, laudantium aspernatur facere quo rerum modi perferendis maxime.</p>
-        <Category img={cat1} name="Jungle plants" />
-        <Category img={cat2} name="Jungle plants" />
-        <Category img={cat3} name="Jungle plants" />
-        <Category img={cat4} name="Jungle plants" />
-        
+       <div>
+            <Category img={cat1} name="Jungle plants" />
+            <Category img={cat2} name="Jungle plants" />
+            <Category img={cat3} name="Jungle plants" />
+            <Category img={cat4} name="Jungle plants" />
+         </div>
     </div>
   )
 }
