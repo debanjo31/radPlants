@@ -7,15 +7,15 @@ import cat4 from "../../img/rad5.png"
 function Categories() {
     const Category = (props) => {
         return(
-            <div>
-                <img src={props.img} alt={props.name} className="w-full h-96" />
+            <div className='mb-4'>
+                <img src={props.img} alt={props.name} className="w-full h-96 mb-2" />
                 <p className='font-mainFont'>{props.name}</p>
             </div>
         )
     }
   return (
-    <div className='w-5/6 text-lg mx-auto'>
-       <p className='text-center font-mainFont'>Categories</p> 
+    <div className='w-5/6 mx-auto '>
+       <p className='mt-8 text-center font-mainFont text-2xl mb-8'>Categories</p> 
        <div className='md:flex gap-4 '>
             <Category img={cat1} name="Jungle plants" />
             <Category img={cat2} name="Outdoor plants" />

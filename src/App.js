@@ -7,6 +7,7 @@ function App() {
       <Header />
       <Homepage />
       <Categories />
+      <p className="w-4/6 mx-auto text-center font-mainFont text-2xl m-16">Love and work are to people what water and sunshine are to plant</p>
     </div>
   );
 }
