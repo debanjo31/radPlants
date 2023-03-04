@@ -26,8 +26,8 @@ function Header() {
   console.log(status)
 
   return (
-    <div className="w-5/6 mx-auto">
-        <div className="flex justify-between">
+    <div className=" shadow-md">
+        <div className="flex justify-between w-5/6 mx-auto">
             <div className="font-bold text-2xl font-mainFont">Rad Plants</div>
             <div className="hidden md:flex gap-8  ">
                 <a href="#">Home</a>
