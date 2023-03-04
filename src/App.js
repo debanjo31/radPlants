@@ -3,7 +3,7 @@ import Homepage from "./component/Pages/Homepage";
 import Categories from "./component/Pages/Categories";
 function App() {
   return (
-    <div className="App xl:w-5/6 xl:mx-auto">
+    <div className="App 2xl:w-5/6 xl:mx-auto">
       <Header />
       <Homepage />
       <Categories />
