@@ -1,11 +1,9 @@
+import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import {useRecoilState} from 'recoil';
-import { navAtom } from "../atom/navAtom.js";
-//import Sidebar from './Pages/Sidebar.jsx';
 
 function Header() {
     
-    const [status, setStatus] = useRecoilState(navAtom);
+    const [status, setStatus] = useState(false);
 
   function Sidebar() {
     return (
@@ -23,7 +21,6 @@ function Header() {
     )
   }
   
-  console.log(status)
 
   return (
     <div className=" shadow-md md:shadow-none">
@@ -31,16 +28,18 @@ function Header() {
             <div className="font-bold text-2xl font-mainFont mb-4">Rad Plants</div>
             <div className="hidden md:flex gap-8  ">
                 <a href="#">Home</a>
-                <a href="#">Catalogue</a>                <a href="#">Contact</a>
+                <a href="#">Catalogue</a>               
+                 <a href="#">Contact</a>
             </div>
             <div className="hidden md:flex gap-4 ">
                 <p >Search</p>
                 <p>Cart(0)</p>
             </div>
-            <div className="md:hidden">
-                <FaBars onClick={setStatus(true)} className="font-bold text-xl font-mainFont mt-1" />
+            <div  className="md:hidden">
+                <FaBars onClick={alert("NAva")}  className="font-bold text-xl font-mainFont mt-1" />
             </div>
-            {/* {<Sidebar />} */}
+            {status && <Sidebar />}
+           
         </div>
        
     </div>
