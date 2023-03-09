@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 940px)
+{
+    .homeImage{
+        display: block;
+        height: 70vh;
+        width: 80vw;
+    }
+    .catImg{
+        height: 80vh;
+    }
+}
+
+@media (min-width: 110px)
+{
+    .homeImage{
+        display: block;
+        height: 70vh;
+        width: 60vw;
+    }
+}

@@ -19,7 +19,7 @@ function Categories() {
               // {/* <img src={props.img} alt={props.name} className="w-full h-96 mb-2" /> */}
                <Grid item  xs={12} sm={6} md={6} lg={3}  >
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ height: '60vh', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
@@ -27,10 +27,8 @@ function Categories() {
                     alt={props.name}
                     sx={{ height: '100%', }}
                   />
-                  <CardContent sx={{ flexGrow: 1}}>
-                  <p className='font-mainFont'>{props.name}</p>
-                  </CardContent>
                 </Card>
+                <p className='font-bold text-lg'>{props.name}</p>
               </Grid>
               //  <p className='font-mainFont'>{props.name}</p>
             //</div>
