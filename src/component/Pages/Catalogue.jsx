@@ -25,9 +25,14 @@ function Catalogue() {
                 alt={props.name}
                 sx={{ height: '80%', }}
               />
-              <CardContent><p className='font-bold text-lg'>{props.name}</p></CardContent>
+              <CardContent>
+                <p className='text-sm text-gray-600'>Plant {props.id}</p>
+                <div className="flex justify-between text-md text-black">
+                    <p className='font-bold text-lg mt-2'>&#8358;{props.price}</p>
+                    <button className='text-white font-bold bg-blue-500 px-4 py-2'>Buy</button>
+                </div>
+              </CardContent>
             </Card>
-            
           </Grid>
     )
 }
@@ -38,7 +43,7 @@ function Catalogue() {
        <Container sx={{ py: 4 }} maxWidth="lg">
         <Grid container spacing={4}>
           {catalogue.map((cat) => (
-             <CatalogueItem key={cat.id} img={cat.img} name={cat.type} />
+             <CatalogueItem key={cat.id} img={cat.img} id={cat.id} price={cat.price} />
           ))}
         </Grid>
        </Container>

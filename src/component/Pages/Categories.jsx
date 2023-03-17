@@ -25,7 +25,7 @@ function Categories() {
                     sx={{ height: '100%', }}
                   />
                 </Card>
-                <p className='font-bold text-lg'>{props.name}</p>
+                <p className='text-lg'>{props.name}</p>
               </Grid>
         )
     }
