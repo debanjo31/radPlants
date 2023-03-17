@@ -1,9 +1,14 @@
 import React from 'react'
 import homePic from "../../img/rad1.png"
+import Categories from './Categories';
+import Featured from './Featured';
+import Header from '../Header';
+
 
 function Homepage() {
   return (
     <div>
+        <Header />
       <div className="w-5/6 mx-auto md:flex mt-8 mb-8 ">
         <div className='md:flex md:flex-col justify-center '>
           <div className='md:flex md:flex-col gap-8 md:w-4/6'>
@@ -17,6 +22,9 @@ function Homepage() {
                <img src={homePic} alt="" className=' homeImage'/>
           </div> 
         </div>
+        <Categories />
+      <p className="w-4/6 mx-auto text-center font-mainFont text-2xl m-16">Love and work are to people what water and sunshine are to plant</p>
+      <Featured />
     </div>
   )
 }

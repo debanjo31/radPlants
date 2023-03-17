@@ -4,7 +4,6 @@ import cat2 from "../../img/rad3.jpg"
 import cat3 from "../../img/rad4.jpg"
 import cat4 from "../../img/rad5.png"
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -15,8 +14,6 @@ function Categories() {
   
     const Category = (props) => {
         return(
-            //<div className='mb-4'>
-              // {/* <img src={props.img} alt={props.name} className="w-full h-96 mb-2" /> */}
                <Grid item  xs={12} sm={6} md={6} lg={3}  >
                 <Card
                   sx={{ height: '60vh', display: 'flex', flexDirection: 'column' }}
@@ -30,8 +27,6 @@ function Categories() {
                 </Card>
                 <p className='font-bold text-lg'>{props.name}</p>
               </Grid>
-              //  <p className='font-mainFont'>{props.name}</p>
-            //</div>
         )
     }
   return (
