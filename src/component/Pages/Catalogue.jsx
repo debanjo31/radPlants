@@ -8,11 +8,15 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import { catalogueAtom } from '../../atom/catalogue';
 import { useRecoilState } from 'recoil';
+import { useNavigate } from 'react-router';
 
 
 function Catalogue() {
   const [catalogue, setcatalogue] = useRecoilState(catalogueAtom);
-  
+  const navigate = useNavigate();
+  const purchase = ({ id }) => {
+    navigate(`/catalogue/${id}`)
+  }
   const CatalogueItem = (props) => {
     return(
            <Grid item  xs={12} sm={6} md={6} lg={3}  >
@@ -29,7 +33,7 @@ function Catalogue() {
                 <p className='text-sm text-gray-600'>Plant {props.id}</p>
                 <div className="flex justify-between text-md text-black">
                     <p className='font-bold text-lg mt-2'>&#8358;{props.price}</p>
-                    <button className='text-white font-bold bg-blue-500 px-4 py-2'>Buy</button>
+                    <button className='text-white font-bold bg-blue-500 px-4 py-2' onClick={() => purchase(props)}>Buy</button>
                 </div>
               </CardContent>
             </Card>
