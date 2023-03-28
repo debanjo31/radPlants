@@ -15,10 +15,11 @@ function Plant() {
   const filteredPlant = catalogue.filter(item => item.id == id)
   const sliderSettings = {
     // removes default buttons
-    arrows: false,
+    dots : true,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
   }
   
   return (
