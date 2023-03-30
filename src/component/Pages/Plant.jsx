@@ -61,8 +61,8 @@ function Plant() {
             className="border-2 border-black p-1 w-4/6 block text-center"
             onChange={(e) => setquantity(quantity(e.target.value))}
           />
-          <button type='button' onClick={handleAdd} className="absolute top-0 left-40 text-lg">-</button>
-        <button type='button' onClick={handleSubtract} className="absolute top-0 right-2 text-lg">+</button>
+          <button type='button' onClick={handleSubtract} className="absolute top-0 left-40 text-lg">-</button>
+        <button type='button'  onClick={handleAdd} className="absolute top-0 right-2 text-lg">+</button>
         </div>
         
         <button className='block w-full mt-4 p-2 bg-black text-white'>ADD TO CART</button>
