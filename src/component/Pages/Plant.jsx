@@ -36,7 +36,7 @@ function Plant() {
     <div className='mb-8'>
         <Header />
         <div className='md:hidden w-5/6 mx-auto mt-4 z-10 '>
-        <button onClick={() => navigate("/catalogue")} className="bg-black text-white p-2 mb-2">Go back</button>
+        <button onClick={() => navigate("/catalogue")} className=" text-black p-2 mb-2"> &larr;</button>
         <Slider ref={setSliderRef} {...sliderSettings}>
         <div key={1}>
           <img src={filteredPlant[0].img} className="h-96 w-full" /> 
@@ -58,11 +58,11 @@ function Plant() {
           <input
             type="number"
             value={quantity}
-            className="border-2 border-black p-1 w-4/6 block text-center"
+            className="border-2 outline-none border-none p-1 w-4/6 block text-center font-bold"
             onChange={(e) => setquantity(quantity(e.target.value))}
           />
-          <button type='button' onClick={handleSubtract} className="absolute top-0 left-40 text-lg">-</button>
-        <button type='button'  onClick={handleAdd} className="absolute top-0 right-2 text-lg">+</button>
+          <button type='button' onClick={handleSubtract} className="bg-black text-white text-xl p-2 px-4 font-bold absolute top-0 left-40 ">-</button>
+        <button type='button'  onClick={handleAdd} className="absolute top-0 right-6 bg-black text-white text-xl p-2 px-4 font-bold">+</button>
         </div>
         
         <button className='block w-full mt-4 p-2 bg-black text-white'>ADD TO CART</button>
