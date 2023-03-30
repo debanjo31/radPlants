@@ -61,11 +61,11 @@ function Plant() {
             className="border-2 outline-none border-none p-1 w-4/6 block text-center font-bold"
             onChange={(e) => setquantity(quantity(e.target.value))}
           />
-          <button type='button' onClick={handleSubtract} className="bg-black text-white text-xl p-2 px-4 font-bold absolute top-0 left-40 ">-</button>
-        <button type='button'  onClick={handleAdd} className="absolute top-0 right-6 bg-black text-white text-xl p-2 px-4 font-bold">+</button>
+          <button type='button' onClick={handleSubtract} className="bg-black text-white text-xl p-2 px-4 font-bold absolute top-0 left-32 ">-</button>
+        <button type='button'  onClick={handleAdd} className="absolute top-0 right-2 bg-black text-white text-xl p-2 px-4 font-bold">+</button>
         </div>
         
-        <button className='block w-full mt-4 p-2 bg-black text-white'>ADD TO CART</button>
+        <button className='block w-full mt-8 p-2 bg-black text-white'>ADD TO CART</button>
       </form>
       
       </div>    
