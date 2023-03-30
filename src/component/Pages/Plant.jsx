@@ -29,7 +29,9 @@ function Plant() {
   };
 
   const handleSubtract = () => {
-    setquantity(quantity - 1);
+    if(quantity > 1){
+      setquantity(quantity - 1);
+    }
   };
 
   return (
@@ -38,8 +40,8 @@ function Plant() {
         <div className='md:hidden w-5/6 mx-auto mt-4 z-10 '>
         <button onClick={() => navigate("/catalogue")} className=" text-black p-2 mb-2"> &larr;</button>
         <Slider ref={setSliderRef} {...sliderSettings}>
-        <div key={1}>
-          <img src={filteredPlant[0].img} className="h-96 w-full" /> 
+        <div key={1}className="shadow-lg">
+          <img src={filteredPlant[0].img} className="border-2 border-gray-600 h-96 w-full" /> 
         </div>
         <div key={2}>
           <img src={filteredPlant[0].imgsub[0]} className="h-96 w-full" /> 
@@ -61,11 +63,11 @@ function Plant() {
             className="border-2 outline-none border-none p-1 w-4/6 block text-center font-bold"
             onChange={(e) => setquantity(quantity(e.target.value))}
           />
-          <button type='button' onClick={handleSubtract} className="bg-black text-white text-xl p-2 px-4 font-bold absolute top-0 left-32 ">-</button>
-        <button type='button'  onClick={handleAdd} className="absolute top-0 right-2 bg-black text-white text-xl p-2 px-4 font-bold">+</button>
+          <button type='button' onClick={handleSubtract} className="bg-blue-500 text-white text-xl h-12 w-12 -mt-2 font-bold absolute top-0 left-32 ">-</button>
+        <button type='button'  onClick={handleAdd} className="absolute top-0 right-2 bg-blue-500 text-white text-xl h-12 w-12 -mt-2 font-bold">+</button>
         </div>
         
-        <button className='block w-full mt-8 p-2 bg-black text-white'>ADD TO CART</button>
+        <button className='block w-full mt-8 p-2 bg-blue-500 text-white'>ADD TO CART</button>
       </form>
       
       </div>    
