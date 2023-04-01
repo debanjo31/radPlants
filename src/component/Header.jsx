@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';    
+import { cartAtom } from '../atom/cart';
+import { useRecoilState } from 'recoil';
 
 function Header() {
-    
     const [status, setStatus] = useState(false);
+    const [cart, setCart] = useRecoilState(cartAtom);
 
   function Sidebar() {
     return (
@@ -34,9 +37,10 @@ function Header() {
             </div>
             <div className="hidden md:flex gap-4 ">
                 <p >Search</p>
-                <p>Cart(0)</p>
+                <p>Cart({cart.length})</p>
             </div>
-            <div  className="md:hidden">
+            <div  className="md:hidden flex gap-4">
+                <ShoppingCartOutlinedIcon className="font-bold text-xl font-mainFont" />
                 <FaBars onClick={() => setStatus(true)}  className="font-bold text-xl font-mainFont mt-1" />
             </div>
             {status && <Sidebar />}
