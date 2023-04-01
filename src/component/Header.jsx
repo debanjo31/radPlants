@@ -39,7 +39,7 @@ function Header() {
                 <p >Search</p>
                 <p>Cart({cart.length})</p>
             </div>
-            <div  className="md:hidden flex gap-4">
+            <div  className="md:hidden flex gap-4 mt-1">
                 <ShoppingCartOutlinedIcon className="font-bold text-xl font-mainFont" />
                 <FaBars onClick={() => setStatus(true)}  className="font-bold text-xl font-mainFont mt-1" />
             </div>
