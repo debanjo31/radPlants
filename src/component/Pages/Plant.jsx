@@ -50,9 +50,9 @@ function Plant() {
         <Header />
         <div className=' w-5/6 mx-auto mt-4 z-10 '>
         <button onClick={() => navigate("/catalogue")} className=" text-black p-2 mb-2"> &larr;</button>
-        <div className='md:hidden'>
+        <div className='md:hidden shadow-lg'>
               <Slider ref={setSliderRef} {...sliderSettings} className="md:hidden">
-                 <div key={1}className="shadow-lg">
+                 <div key={1}className="">
                     <img src={filteredPlant[0].img} className="h-96 w-full" /> 
                  </div>
                  <div key={2}>
